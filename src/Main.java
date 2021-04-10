@@ -18,14 +18,6 @@ public class Main {
         Book[] newBooks = books;
         Book book =  new FictionBook("aaa", "b2", 25, "hai121", "axax");
         Scanner sc = new Scanner(System.in);
-
-
-//       newBook = MyArrayBook.addBook(books, new ProgrammingBook("aa", "khhhhhhhhhhhh", 15, "hai1", "java", "Spring"), index);
-//        System.out.println(newBook[5].getName());
-//        newBook = MyArrayBook.editBook(books, new FictionBook("aa", "fffgg", 15, "hai", "aa" ), index);
-//        System.out.println(newBook[index].getName());
-
-
         while (true) {
             System.out.println("Mời nhập các lựa chọn sau");
             System.out.println("1. addBook \n 2.editBook \n 3.deleteBook \n 4.showBooks \n 5.Exit");
