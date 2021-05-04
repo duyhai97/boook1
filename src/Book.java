@@ -1,4 +1,5 @@
-public class Book {
+import java.util.Comparator;
+public class Book implements Comparable<Book>{
     protected String bookCode;
     private String name;
     private int price;
@@ -44,5 +45,20 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookCode='" + bookCode + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", author='" + author + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return this.price - o.getPrice();
     }
 }
